@@ -1,0 +1,215 @@
+    dog                                
+    mixed-breed dog                    
+    mixed breed dog                    
+  1 affenpinscher                      
+  2 affenpinscher, monkey pinscher, monkey dog
+  3 afghan hound                       
+  4 afghan hound, afghan               
+  5 airedale terrier                   
+  6 airedale, airedale terrier         
+  7 akita                              
+  8 alaskan malamute                   
+  9 american eskimo dog                
+ 10 american foxhound                  
+ 11 american staffordshire terrier     
+ 12 american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier
+ 13 american water spaniel             
+ 14 anatolian shepherd dog             
+ 15 appenzeller                        
+ 16 australian cattle dog              
+ 17 australian shepherd                
+ 18 australian terrier                 
+ 19 basenji                            
+ 20 basset hound                       
+ 21 basset, basset hound               
+ 22 beagle                             
+ 23 bearded collie                     
+ 24 beauceron                          
+ 25 bedlington terrier                 
+ 26 belgian malinois                   
+ 27 belgian sheepdog                   
+ 28 belgian tervuren                   
+ 29 bernese mountain dog               
+ 30 bichon frise                       
+ 31 black and tan coonhound            
+ 32 black russian terrier              
+ 33 black-and-tan coonhound            
+ 34 blenheim spaniel                   
+ 35 bloodhound                         
+ 36 bloodhound, sleuthhound            
+ 37 bluetick                           
+ 38 bluetick coonhound                 
+ 39 border collie                      
+ 40 border terrier                     
+ 41 borzoi                             
+ 42 borzoi, russian wolfhound          
+ 43 boston bull, boston terrier        
+ 44 boston terrier                     
+ 45 bouvier des flandres               
+ 46 bouvier des flandres, bouviers des flandres
+ 47 boxer                              
+ 48 boykin spaniel                     
+ 49 brabancon griffon                  
+ 50 briard                             
+ 51 brittany                           
+ 52 brittany spaniel                   
+ 53 brussels griffon                   
+ 54 bull mastiff                       
+ 55 bull terrier                       
+ 56 bulldog                            
+ 57 bullmastiff                        
+ 58 cairn terrier                      
+ 59 cairn, cairn terrier               
+ 60 canaan dog                         
+ 61 cane corso                         
+ 62 cardigan welsh corgi               
+ 63 cardigan, cardigan welsh corgi, corgi
+ 64 cavalier king charles spaniel      
+ 65 chesapeake bay retriever           
+ 66 chihuahua                          
+ 67 chinese crested                    
+ 68 chinese shar-pei                   
+ 69 chow chow                          
+ 70 chow, chow chow                    
+ 71 clumber spaniel                    
+ 72 clumber, clumber spaniel           
+ 73 cocker spaniel                     
+ 74 cocker spaniel, english cocker spaniel, cocker
+ 75 collie                             
+ 76 corgi                              
+ 77 curly-coated retriever             
+ 78 dachshund                          
+ 79 dalmatian                          
+ 80 dalmatian, coach dog, carriage dog 
+ 81 dandie dinmont terrier             
+ 82 dandie dinmont, dandie dinmont terrier
+ 83 doberman pinscher                  
+ 84 doberman, doberman pinscher        
+ 85 dogue de bordeaux                  
+ 86 english cocker spaniel             
+ 87 english foxhound                   
+ 88 english setter                     
+ 89 english springer spaniel           
+ 90 english springer, english springer spaniel
+ 91 english toy spaniel                
+ 92 entlebucher                        
+ 93 entlebucher mountain dog           
+ 94 eskimo dog, husky                  
+ 95 field spaniel                      
+ 96 finnish spitz                      
+ 97 flat-coated retriever              
+ 98 french bulldog                     
+ 99 german pinscher                    
+100 german shepherd dog                
+101 german shepherd, german shepherd dog, german police dog, alsatian
+102 german shorthaired pointer         
+103 german wirehaired pointer          
+104 giant schnauzer                    
+105 glen of imaal terrier              
+106 golden retriever                   
+107 gordon setter                      
+108 great dane                         
+109 great pyrenees                     
+110 greater swiss mountain dog         
+111 greyhound                          
+112 groenendael                        
+113 havanese                           
+114 ibizan hound                       
+115 ibizan hound, ibizan podenco       
+116 icelandic sheepdog                 
+117 irish red and white setter         
+118 irish setter                       
+119 irish setter, red setter           
+120 irish terrier                      
+121 irish water spaniel                
+122 irish wolfhound                    
+123 italian greyhound                  
+124 japanese chin                      
+125 japanese spaniel                   
+126 keeshond                           
+127 kelpie                             
+128 kerry blue terrier                 
+129 komondor                           
+130 kuvasz                             
+131 labrador retriever                 
+132 lakeland terrier                   
+133 leonberg                           
+134 leonberger                         
+135 lhasa apso                         
+136 lhasa, lhasa apso                  
+137 lowchen                            
+138 malamute, malemute, alaskan malamute
+139 malinois                           
+140 maltese                            
+141 maltese dog, maltese terrier, maltese
+142 manchester terrier                 
+143 mastiff                            
+144 mexican hairless                   
+145 miniature pinscher                 
+146 miniature poodle                   
+147 miniature schnauzer                
+148 neapolitan mastiff                 
+149 newfoundland                       
+150 newfoundland, newfoundland dog     
+151 norfolk terrier                    
+152 norwegian buhund                   
+153 norwegian elkhound                 
+154 norwegian elkhound, elkhound       
+155 norwegian lundehund                
+156 norwich terrier                    
+157 nova scotia duck tolling retriever 
+158 old english sheepdog               
+159 old english sheepdog, bobtail      
+160 otterhound                         
+161 otterhound, otter hound            
+162 papillon                           
+163 parson russell terrier             
+164 pekinese, pekingese, peke          
+165 pekingese                          
+166 pembroke welsh corgi               
+167 pembroke, pembroke welsh corgi, corgi
+168 petit basset griffon vendeen       
+169 pharaoh hound                      
+170 plott                              
+171 pointer                            
+172 pomeranian                         
+173 poodle                             
+174 portuguese water dog               
+175 pug, pug-dog                       
+176 redbone                            
+177 rhodesian ridgeback                
+178 rottweiler                         
+179 saint bernard                      
+180 saint bernard, st bernard          
+181 saluki, gazelle hound              
+182 samoyed, samoyede                  
+183 schipperke                         
+184 schnauzer                          
+185 scotch terrier, scottish terrier, scottie
+186 scottish deerhound, deerhound      
+187 sealyham terrier, sealyham         
+188 shetland sheepdog, shetland sheep dog, shetland
+189 shih-tzu                           
+190 siberian husky                     
+191 silky terrier                      
+192 silky terrier, sydney silky        
+193 smooth fox terrier                 
+194 soft-coated wheaten terrier        
+195 staffordshire bullterrier, staffordshire bull terrier
+196 standard poodle, poodle            
+197 standard schnauzer, schnauzer      
+198 sussex spaniel                     
+199 tibetan mastiff                    
+200 tibetan terrier, chrysanthemum dog 
+201 toy poodle                         
+202 toy terrier                        
+203 vizsla, hungarian pointer          
+204 walker hound, walker foxhound      
+205 weimaraner                         
+206 welsh springer spaniel             
+207 west highland white terrier        
+208 whippet                            
+209 wire-haired fox terrier            
+210 wirehaired pointing griffon        
+211 xoloitzcuintli                     
+212 yorkshire terrier                  
