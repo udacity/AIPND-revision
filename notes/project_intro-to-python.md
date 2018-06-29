@@ -5,15 +5,14 @@ These notes pertain to Frequently Asked Questions (FAQ) for the **_2. Intro to P
     
 ## Quick Links to Frequently Asked Questions 
 * [GitHub AIPND Repository Link](https://github.com/udacity/AIPND-revision)
-* [Issues with the Lab Workspace](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#issues-with-the-lab-workspace)
-* [Running the Project on a Local Computer](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#running-the-project-on-a-local-computer)
-* [Files Required to Run **_check_images.py_** Locally](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#files-required-to-run-check_imagespy-locally)
-* [Running Batch Files on Windows OS Locally](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#running-batch-files-on-windows-os-locally)
-* [Forking the GitHub Respository for Solution display and debugging](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#forking-the-github-respository-for-solution-display-and-debugging)
-* [Eliminating Syntax Errors with Text Editor/Integrated Development Environment](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#eliminating-syntax-errors-with-text-editorintegrated-development-environment)
-* [Cutting and Pasting Code in the Classroom](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#cutting-and-pasting-code-in-the-classroom)
-* [Indention of Python Code](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#indention-of-python-code)
-* [Replacing Pass Statements](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#replacing-pass-statements)
+* [Issues with the Project Workspace](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python-lab.md#issues-with-the-project-workspace)
+* [Running the Project on a Local Computer](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python-lab.md#running-the-project-on-a-local-computer)
+* [Files Required to Run **_check_images.py_** Locally](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python-lab.md#files-required-to-run-check_imagespy-locally)
+* [Running Batch Files on Windows OS Locally](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python-lab.md#running-batch-files-on-windows-os-locally)
+* [Eliminating Syntax Errors with Text Editor/Integrated Development Environment](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python-lab.md#eliminating-syntax-errors-with-text-editorintegrated-development-environment)
+* [Cutting and Pasting Code in the Classroom](https://github.com/udacity/AIPND-revision/blob/master/notes-revision/project_intro-to-python-lab.md#cutting-and-pasting-code-in-the-classroom)
+* [Indention of Python Code](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python-lab.md#indention-of-python-code)
+* [Replacing Pass Statements](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python-lab.md#replacing-pass-statements)
 &nbsp;  
 &nbsp;     
   
@@ -72,11 +71,6 @@ run_models_batch.bat
 If instead you are working with the uploaded images , you will replace all instances of **_run_models_batch.bat_** from the _directions_ above with **_run_models_batch_uploaded.bat_**. 
 &nbsp;     
 &nbsp;         
-    
-## Forking the GitHub Respository for Solution display and debugging
-We recommend forking the [github repository for AIPND](https://github.com/udacity/AIPND) to display your solution and to allow for improved debugging support. See the following for directions on [joining GitHub](https://github.com/join?source=header-home) and for direction on [how to fork a GitHub repository](https://help.github.com/articles/fork-a-repo/). Additionally, forking the repository will enable you to more easily show AIPND instructors and students where you are having difficulty with coding the lab. One can always provide others a link to the code that seems to have errors within their fork.
-&nbsp;   
-&nbsp;   
     
 ## Eliminating Syntax Errors with Text Editor/Integrated Development Environment 
 If you are experiencing a lot of syntax errors with your code, you may consider downloading your code and looking at it with your favorite text editor/IDE to help eliminate the syntax errors from your program.  Recall in **_2. Intro to Python_**, **_Lesson 5. Scripting_**, **_Section 6. Programming Environment Setup_** you were provided with a number of text editors that are available to use with python (like _Atom_, _Sublime Text_, _Notepad++_). Additionally, when you installed Anaconda, the Spyder IDE (Integrated Development Environment) for python should be available through the _Anaconda Navigator_. 
