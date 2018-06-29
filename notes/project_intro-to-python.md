@@ -10,7 +10,7 @@ These notes pertain to Frequently Asked Questions (FAQ) for the **_2. Intro to P
 * [Files Required to Run **_check_images.py_** Locally](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#files-required-to-run-check_imagespy-locally)
 * [Running Batch Files on Windows OS Locally](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#running-batch-files-on-windows-os-locally)
 * [Eliminating Syntax Errors with Text Editor/Integrated Development Environment](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#eliminating-syntax-errors-with-text-editorintegrated-development-environment)
-* [Cutting and Pasting Code in the Classroom](https://github.com/udacity/AIPND-revision/blob/master/notes-revision/project_intro-to-python.md#cutting-and-pasting-code-in-the-classroom)
+* [Cutting and Pasting Code in the Classroom](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#cutting-and-pasting-code-in-the-classroom)
 * [Indention of Python Code](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#indention-of-python-code)
 * [Replacing Pass Statements](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#replacing-pass-statements)
 &nbsp;  
@@ -39,6 +39,7 @@ For this lab you will also need to install the python packages pytorch and torch
 The following files and folders need to be put in the same folder as the **_check_images.py_** python program on your local computer. You will find these files and folders within the [GitHub AIPND Repository](https://github.com/udacity/AIPND-revision/tree/master/intropylab-classifying-images). There are more programs in the repository than you will need, these extra programs are there to provide the code within the lessons in a format that can be copied and pasted from.
 ### Needed Files:
 * **pet_images**  (folder of 40 pet image)
+* **uploaded_images** (a folder you will have to create to hold your uploaded images in that section of the project)
 * **classifier.py** (classifier function you will be using to classify the images)
 * **dognames.txt** (file that contains all the valid dog names from the classifier function and the pet image files)
 * **imagenet1000_clsid_to_human.txt** (dictionary that converts the classifier function ids to text labels)
