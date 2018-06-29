@@ -158,9 +158,11 @@ chinese shar-pei
 chow chow
 clumber spaniel
 cocker spaniel
+corgi
 dachshund
 dalmatian
 dandie dinmont terrier
+deerhound
 doberman pinscher
 dogue de bordeaux
 english cocker spaniel
@@ -203,13 +205,20 @@ plott
 pointer
 poodle
 portuguese water dog
+pug
 saint bernard
+saluki
+samoyed
+schnauzer
+scottish terrier
+sealyham terrier
+shetland sheepdog
 silky terrier
 smooth fox terrier
+staffordshire bull terrier
+tibetan terrier
+vizsla
+walker hound
 wirehaired pointing griffon
 xoloitzcuintli
-mixed breed dog
-mixed-breed dog
 dog
-schnauzer
-corgi
