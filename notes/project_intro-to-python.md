@@ -5,18 +5,18 @@ These notes pertain to Frequently Asked Questions (FAQ) for the **_2. Intro to P
     
 ## Quick Links to Frequently Asked Questions 
 * [GitHub AIPND Repository Link](https://github.com/udacity/AIPND-revision)
-* [Issues with the Project Workspace](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python-lab.md#issues-with-the-project-workspace)
-* [Running the Project on a Local Computer](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python-lab.md#running-the-project-on-a-local-computer)
-* [Files Required to Run **_check_images.py_** Locally](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python-lab.md#files-required-to-run-check_imagespy-locally)
-* [Running Batch Files on Windows OS Locally](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python-lab.md#running-batch-files-on-windows-os-locally)
-* [Eliminating Syntax Errors with Text Editor/Integrated Development Environment](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python-lab.md#eliminating-syntax-errors-with-text-editorintegrated-development-environment)
-* [Cutting and Pasting Code in the Classroom](https://github.com/udacity/AIPND-revision/blob/master/notes-revision/project_intro-to-python-lab.md#cutting-and-pasting-code-in-the-classroom)
-* [Indention of Python Code](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python-lab.md#indention-of-python-code)
-* [Replacing Pass Statements](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python-lab.md#replacing-pass-statements)
+* [Issues with the Project Workspace](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#issues-with-the-project-workspace)
+* [Running the Project on a Local Computer](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#running-the-project-on-a-local-computer)
+* [Files Required to Run **_check_images.py_** Locally](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#files-required-to-run-check_imagespy-locally)
+* [Running Batch Files on Windows OS Locally](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#running-batch-files-on-windows-os-locally)
+* [Eliminating Syntax Errors with Text Editor/Integrated Development Environment](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#eliminating-syntax-errors-with-text-editorintegrated-development-environment)
+* [Cutting and Pasting Code in the Classroom](https://github.com/udacity/AIPND-revision/blob/master/notes-revision/project_intro-to-python.md#cutting-and-pasting-code-in-the-classroom)
+* [Indention of Python Code](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#indention-of-python-code)
+* [Replacing Pass Statements](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#replacing-pass-statements)
 &nbsp;  
 &nbsp;     
   
-## Issues with the Lab Workspace
+## Issues with the Project Workspace
 While it is recommended that you work on the lab within the **_Project Workspace_**, a few students _may_ experienced issues trying to work within the _Project Workspace_.  Some students found these issues resolved when they switched their internet browsers.  Specifically, some students found that **_Chrome_** worked best; while others found that **_Firefox_** worked better for them.  If you are running into the problem where the _files_ in the workspace don't load and/or running code within the workspace runs extremely slowly; please try the following:
 * Quit and exit out of the **_web browser_** you are using, then open it back up and restart it.
 * Switch to a different **_web browser_**. 
@@ -55,12 +55,12 @@ The following files and folders need to be put in the same folder as the **_chec
 * **test_classifier.py** (an example program that demonstrates how to use the classifier function)
 * **print_functions_for_lab_checks.py** (a program that contains functions that will allow you to check your code)
 
-Also be aware the instructor provided solution also exists within the GitHub repository as the file **_check_images_solution.py_** and the file **_run_models_batch_solution.sh_** can be used to run the instructor solution for all 3 model architectures in a Unix/Linux/OSX/Lab Workspace environment from a _terminal_ window. For Windows, you will be using the file **_run_models_batch_solution.bat_** from the _Anaconda Prompt_ window (see next [FAQ](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#running-batch-files-on-windows-os-locally) for details).
+Also be aware the instructor provided solution also exists within the GitHub repository as the file **_check_images_solution.py_** and the file **_run_models_batch_solution.sh_** can be used to run the instructor solution for all 3 model architectures in a Unix/Linux/OSX/Lab Workspace environment from a _terminal_ window. For Windows, you will be using the file **_run_models_batch_solution.bat_** from the _Anaconda Prompt_ window (see next [FAQ](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#running-batch-files-on-windows-os-locally) for details).
 &nbsp;   
 &nbsp;     
      
 ## Running Batch Files on Windows OS Locally
-To run the files **_run_models_batch_** or **_run_models_batch_uploaded_** that run all 3 model architectures using **_check_images.py_** on a Windows OS locally; you will need to use the files that end with the extention **_.bat_** instead of the extension **_.sh_**.  You will have also needed to have installed Anaconda on your computer (see following [FAQ](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#running-the-lab-on-a-local-computer) for details on Anaconda installation).
+To run the files **_run_models_batch_** or **_run_models_batch_uploaded_** that run all 3 model architectures using **_check_images.py_** on a Windows OS locally; you will need to use the files that end with the extention **_.bat_** instead of the extension **_.sh_**.  You will have also needed to have installed Anaconda on your computer (see following [FAQ](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#running-the-project-on-a-local-computer) for details on Anaconda installation).
 ### Directions:
 * Open the **Anaconda Prompt** - either from typing **_Anaconda Prompt_** within the search bar and selecting it _or_ by clicking on it once it's found within the **Anaconda** folder of programs.
 * Navigate to the _folder_ within the **Anaconda Prompt** that contains the _Lab files_ including **_check_images.py_** and **_run_models_batch.bat_** using the command [_cd_](https://en.wikipedia.org/wiki/Cd_(command)).
