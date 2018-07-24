@@ -25,7 +25,7 @@ from classifier import classifier
 
 # TODO 3: Define classify_images function below, specifically replace the None
 #       below by the function definition of the classify_images function. 
-#       Notice that this function doesn't to return anything because the 
+#       Notice that this function doesn't return anything because the 
 #       results_dic dictionary that is passed into the function is a mutable 
 #       data type so no return is needed.
 # 
