@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# */AIPND-revision/intropyproject-classify-pet-images/get_input_args.py
+# */AIPND-revision/intropyproject-classify-pet-images/get_input_args_hints.py
 #                                                                             
 # PROGRAMMER: 
 # DATE CREATED:                                   
 # REVISED DATE: 
-# PURPOSE: Create a function that retrieves the following 3 command line inputs 
-#          from the user using the Argparse Python module. If the user fails to 
+# PURPOSE: This is a *hints* file to help guide students in creating the 
+#          function that retrieves the following 3 command line inputs from
+#          the user using the Argparse Python module. If the user fails to 
 #          provide some or all of the 3 inputs, then the default values are
 #          used for the missing inputs. Command Line Arguments:
 #     1. Image Folder as --dir with default value 'pet_images'

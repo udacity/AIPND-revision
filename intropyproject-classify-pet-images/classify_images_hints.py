@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# */AIPND-revision/intropyproject-classify-pet-images/classify_images.py
+# */AIPND-revision/intropyproject-classify-pet-images/classify_images_hints.py
 #                                                                             
 # PROGRAMMER: 
 # DATE CREATED:                                 
 # REVISED DATE: 
-# PURPOSE: Create a function classify_images that uses the classifier function 
+# PURPOSE: This is a *hints* file to help guide students in creating the 
+#          function classify_images that uses the classifier function 
 #          to create the classifier labels and then compares the classifier 
 #          labels to the pet image labels. This function inputs:
 #            -The Image Folder as image_dir within classify_images and function 
