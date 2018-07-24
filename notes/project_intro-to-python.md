@@ -9,6 +9,7 @@ These notes pertain to Frequently Asked Questions (FAQ) for the **_2. Intro to P
 * [Running the Project on a Local Computer](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#running-the-project-on-a-local-computer)
 * [Files Required to Run **_check_images.py_** Locally](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#files-required-to-run-check_imagespy-locally)
 * [Running Batch Files on Windows OS Locally](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#running-batch-files-on-windows-os-locally)
+* [**_Hints_** for this Project](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#hints-for-this-project)
 * [Eliminating Syntax Errors with Text Editor/Integrated Development Environment](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#eliminating-syntax-errors-with-text-editorintegrated-development-environment)
 * [Cutting and Pasting Code in the Classroom](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#cutting-and-pasting-code-in-the-classroom)
 * [Indention of Python Code](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#indention-of-python-code)
@@ -56,7 +57,13 @@ The following files and folders need to be put in the same folder as the **_chec
 * **test_classifier.py** (an example program that demonstrates how to use the classifier function)
 * **print_functions_for_lab_checks.py** (a program that contains functions that will allow you to check your code)
 
-Also be aware the instructor provided solution also exists within the GitHub repository as the file **_check_images_solution.py_** and the file **_run_models_batch_solution.sh_** can be used to run the instructor solution for all 3 model architectures in a Unix/Linux/OSX/Project Workspace environment from a _terminal_ window. For Windows, you will be using the file **_run_models_batch_solution.bat_** from the _Anaconda Prompt_ window (see next [FAQ](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#running-batch-files-on-windows-os-locally) for details).
+Also be aware that instructor provided **_hints_** files are provided for each of the functions used within this project, these files will end with **_hints.py**. These **_hints_** files contain extra code as to provide a few **_hints_** to help guide students to the solution. You will find these **_hints_** files within the **Project Workspace** and also within the GitHub repository as the following files:
+* **adjust_results4_isadog_hints.py** (a program that contains **_hints_** for the **adjust_results4_isadog** function that you will be defining as part of the project)
+* **calculates_results_stats_hints.py** (a program that contains **_hints_** for the **calculates_results_stats** function that you will be defining as part of the project)
+* **classify_images_hints.py** (a program that contains **_hints_** for the **classify_images** function that you will be defining as part of the project)
+* **get_input_args_hints.py** (a program that contains **_hints_** for the **get_input_args** function that you will be defining as part of the project)
+* **get_pet_labels_hints.py** (a program that contains **_hints_** for the **get_pet_labels** function that you will be defining as part of the project)
+* **print_results_hints.py** (a program that contains **_hints_** for the **print_results** function that you will be defining as part of the project)
 &nbsp;   
 &nbsp;     
      
@@ -72,7 +79,18 @@ run_models_batch.bat
 If instead you are working with the uploaded images , you will replace all instances of **_run_models_batch.bat_** from the _directions_ above with **_run_models_batch_uploaded.bat_**. 
 &nbsp;     
 &nbsp;         
-    
+
+## **_Hints_** for this Project
+Instructor provided **_hints_** files are provided for each of the functions used within this project, these files will end with **_hints.py**. These **_hints_** files contain extra code as to provide a few **_hints_** to help guide students to the solution. You will find these **_hints_** files within the **Project Workspace** and also within the GitHub repository as the following files:
+* **adjust_results4_isadog_hints.py** (a program that contains **_hints_** for the **adjust_results4_isadog** function that you will be defining as part of the project)
+* **calculates_results_stats_hints.py** (a program that contains **_hints_** for the **calculates_results_stats** function that you will be defining as part of the project)
+* **classify_images_hints.py** (a program that contains **_hints_** for the **classify_images** function that you will be defining as part of the project)
+* **get_input_args_hints.py** (a program that contains **_hints_** for the **get_input_args** function that you will be defining as part of the project)
+* **get_pet_labels_hints.py** (a program that contains **_hints_** for the **get_pet_labels** function that you will be defining as part of the project)
+* **print_results_hints.py** (a program that contains **_hints_** for the **print_results** function that you will be defining as part of the project)
+&nbsp;   
+&nbsp;   
+
 ## Eliminating Syntax Errors with Text Editor/Integrated Development Environment 
 If you are experiencing a lot of syntax errors with your code, you may consider downloading your code and looking at it with your favorite text editor/IDE to help eliminate the syntax errors from your program.  Recall in **_2. Intro to Python_**, **_Lesson 5. Scripting_**, **_Section 6. Programming Environment Setup_** you were provided with a number of text editors that are available to use with python (like _Atom_, _Sublime Text_, _Notepad++_). Additionally, when you installed Anaconda, the Spyder IDE (Integrated Development Environment) for python should be available through the _Anaconda Navigator_. 
 &nbsp;   
