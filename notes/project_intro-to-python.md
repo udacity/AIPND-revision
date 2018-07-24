@@ -13,7 +13,7 @@ These notes pertain to Frequently Asked Questions (FAQ) for the **_2. Intro to P
 * [Eliminating Syntax Errors with Text Editor/Integrated Development Environment](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#eliminating-syntax-errors-with-text-editorintegrated-development-environment)
 * [Cutting and Pasting Code in the Classroom](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#cutting-and-pasting-code-in-the-classroom)
 * [Indention of Python Code](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#indention-of-python-code)
-* [Replacing Pass Statements](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#replacing-pass-statements)
+* [Replacing None and Pass Statements](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#replacing-none-and-pass-statements)
 &nbsp;  
 &nbsp;     
   
@@ -108,8 +108,8 @@ Be aware that using the _tab_ key within most text editors might not guarentee t
 &nbsp;     
 &nbsp;    
     
-## Replacing Pass Statements
-When editing the functions provided in **_check_images.py_** you will need to replace the [_pass_](https://docs.python.org/3/tutorial/controlflow.html#pass-statements) statement with your code for that function. The pass statement does nothing, it's used so that the program will still run eventhough the functions have not been fully defined. 
+## Replacing None and Pass Statements
+When editing the functions provided in **_check_images.py_** you will need to replace [_None_](https://docs.python.org/3/library/constants.html#None) or the [_pass_](https://docs.python.org/3/tutorial/controlflow.html#pass-statements) statement with your code for that function. The pass statement does nothing, it's used so that the program will still run eventhough the functions have not been fully defined. Similarly the value of _None_ represents the absence of a value, it's used so that the program will still run eventhough the functions have not been fully defined.
 &nbsp;    
 &nbsp;     
     
