@@ -21,6 +21,7 @@ This repository contains _REVISED_ code and associated files for the AI Programm
 ## Dependencies
 
 Each directory has a `requirements.txt` describing the minimal dependencies required to run the notebooks in that directory.
+You can download this file from the classroom at /home/workspace/requirements.txt
 
 ### pip
 
