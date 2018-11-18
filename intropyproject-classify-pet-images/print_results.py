@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # */AIPND-revision/intropyproject-classify-pet-images/print_results.py
 #                                                                             
-# PROGRAMMER: 
-# DATE CREATED:
+# PROGRAMMER: SOLOMON APENYA
+# DATE CREATED: 18th November, 2018
 # REVISED DATE: 
 # PURPOSE: Create a function print_results that prints the results statistics
 #          from the results statistics dictionary (results_stats_dic). It 
@@ -62,5 +62,27 @@ def print_results(results_dic, results_stats_dic, model,
     Returns:
            None - simply printing results.
     """    
-    None
-                
+    print("Model Used : " + model)
+    print("Results :\n")
+    print("Number of dog images:\n\t" + str(results_stats_dic['n_dogs_img']) + '\n')
+    print("Number of NON-dog images:\n\t" + str(results_stats_dic['n_notdogs_img']) + '\n')
+    print("Number of matches between pet & classifier labels:\n\t" + str(results_stats_dic['n_match']) + '\n')
+    print("Number of correctly classified dog images:\n\t" + str(results_stats_dic['n_correct_dogs']) + '\n')
+    print("number of correctly classified NON-dog images:\n\t" + str(results_stats_dic['n_correct_notdogs']) + '\n')
+    print("Number of correctly classified dog breeds:\n\t" + str(results_stats_dic['n_correct_breed']) + '\n')
+    print("Percentage of correct matches:\n\t" + str(results_stats_dic['pct_match']) + '\n')
+    print("Percentage of correctly classified dogss:\n\t" + str(results_stats_dic['pct_correct_dogs']) + '\n')
+    print("Percentage of correctly classified dog breeds:\n\t" + str(results_stats_dic['pct_correct_breed']) + '\n')
+    print("Percentage of correctly classified NON-dogs:\n\t" + str(results_stats_dic['pct_correct_notdogs']) + '\n')
+
+    if print_incorrect_dogs:
+        print('\nIncorrectly Classified Dogs\n')
+        for key, value in results_dic.items():
+            if value[4] == 1 and value[3] == 0:
+                print('\t' + value[0] + ', ' + value[1])
+
+    if print_incorrect_breed:
+        print('\nIncorrectly Classified Breeds:\n')
+        for key, value in results_dic.items():
+            if value[4] == 1 and value[3] == 1 and (value[0] not in value[1]):
+                print('\t Actual : ' + value[0] + ', Classifier : ' + value[1])

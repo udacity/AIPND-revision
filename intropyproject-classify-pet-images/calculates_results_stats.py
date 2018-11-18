@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*-
 # */AIPND-revision/intropyproject-classify-pet-images/calculates_results_stats.py
 #                                                                             
-# PROGRAMMER:
-# DATE CREATED:                                  
+# PROGRAMMER: SOLOMON APENYA
+# DATE CREATED: 10th November,2018
 # REVISED DATE: 
 # PURPOSE: Create a function calculates_results_stats that calculates the 
-#          statistics of the results of the programrun using the classifier's model 
+#          statistics of the results of the program run using the classifier's model
 #          architecture to classify the images. This function will use the 
 #          results in the results dictionary to calculate these statistics. 
 #          This function will then put the results statistics in a dictionary
@@ -69,5 +69,51 @@ def calculates_results_stats(results_dic):
                      on how to calculate the counts and statistics.
     """        
     # Replace None with the results_stats_dic dictionary that you created with 
-    # this function 
-    return None
+    # this function
+
+    results_stats_dic = {}
+    total_image = len(results_dic)
+    results_stats_dic['n_images'] = total_image
+
+    dogs_img = 0
+    for key in results_dic:
+        if results_dic[key][3] == 1:
+            dogs_img += 1
+    results_stats_dic['n_dogs_img'] = dogs_img
+
+    not_dogs_img = 0
+    for key in results_dic:
+        if results_dic[key][3] == 0:
+            not_dogs_img += 1
+    results_stats_dic['n_notdogs_img'] = not_dogs_img
+
+    match = 0
+    for key in results_dic:
+        if results_dic[key][2] == 1:
+            match += 1
+    results_stats_dic['n_match'] = match
+
+    correct_dogs = 0
+    for key in results_dic:
+        if results_dic[key][3] == 1 and results_dic[key][4] == 1:
+            correct_dogs += 1
+    results_stats_dic['n_correct_dogs'] = correct_dogs
+
+    correct_not_dogs = 0
+    for key in results_dic:
+        if results_dic[key][3] == 0 and results_dic[key][4] == 0:
+            correct_not_dogs += 1
+    results_stats_dic['n_correct_notdogs'] = correct_not_dogs
+
+    correct_breed = 0
+    for key in results_dic:
+        if results_dic[key][3] == 1 and results_dic[key][2] == 1:
+            correct_breed += 1
+    results_stats_dic['n_correct_breed'] = correct_breed
+
+    results_stats_dic['pct_match'] = match/dogs_img * 100
+    results_stats_dic['pct_correct_dogs'] = correct_dogs/dogs_img * 100
+    results_stats_dic['pct_correct_breed'] = correct_breed/dogs_img * 100
+    results_stats_dic['pct_correct_notdogs'] = correct_not_dogs/not_dogs_img * 100
+
+    return results_stats_dic
