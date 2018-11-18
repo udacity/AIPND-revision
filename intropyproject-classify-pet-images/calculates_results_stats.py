@@ -111,7 +111,7 @@ def calculates_results_stats(results_dic):
             correct_breed += 1
     results_stats_dic['n_correct_breed'] = correct_breed
 
-    results_stats_dic['pct_match'] = match/dogs_img * 100
+    results_stats_dic['pct_match'] = match/total_image * 100
     results_stats_dic['pct_correct_dogs'] = correct_dogs/dogs_img * 100
     results_stats_dic['pct_correct_breed'] = correct_breed/dogs_img * 100
     results_stats_dic['pct_correct_notdogs'] = correct_not_dogs/not_dogs_img * 100

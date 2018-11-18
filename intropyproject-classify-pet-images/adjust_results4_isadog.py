@@ -73,9 +73,6 @@ def adjust_results4_isadog(results_dic, dogfile):
         for line in dogsfile.readlines():
             dog_list.add(line.strip())
 
-    import pdb
-    pdb.set_trace()
-
     for key, value in results_dic.items():
         value.append(0)
         for dog in dog_list:

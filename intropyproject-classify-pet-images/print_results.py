@@ -71,7 +71,7 @@ def print_results(results_dic, results_stats_dic, model,
     print("number of correctly classified NON-dog images:\n\t" + str(results_stats_dic['n_correct_notdogs']) + '\n')
     print("Number of correctly classified dog breeds:\n\t" + str(results_stats_dic['n_correct_breed']) + '\n')
     print("Percentage of correct matches:\n\t" + str(results_stats_dic['pct_match']) + '\n')
-    print("Percentage of correctly classified dogss:\n\t" + str(results_stats_dic['pct_correct_dogs']) + '\n')
+    print("Percentage of correctly classified dogs:\n\t" + str(results_stats_dic['pct_correct_dogs']) + '\n')
     print("Percentage of correctly classified dog breeds:\n\t" + str(results_stats_dic['pct_correct_breed']) + '\n')
     print("Percentage of correctly classified NON-dogs:\n\t" + str(results_stats_dic['pct_correct_notdogs']) + '\n')
 
