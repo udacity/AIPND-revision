@@ -26,3 +26,26 @@ Each directory has a `requirements.txt` describing the minimal dependencies requ
 
 To install these dependencies with pip, you can issue `pip3 install -r requirements.txt`.
 
+
+## Report and Memos
+
+### prepare conda env
+
+``` 
+conda create -n aipnd python=3.6.3
+```
+### install requirements:
+
+```
+pip install -r requirements.txt
+```
+
+### folk projects from origin
+
+```
+git clone https://github.com/udacity/AIPND-revision.git
+cd AIPND-revision
+git branch develop
+git checkout develop
+```
+
