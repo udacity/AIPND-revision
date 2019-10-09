@@ -40,4 +40,22 @@ def get_input_args():
     """
     # Replace None with parser.parse_args() parsed argument collection that 
     # you created with this function 
-    return None
+    
+    
+    
+    # Create Parse using ArgumentParser
+    parser = argparse.ArgumentParser()
+    # Create 3 command line arguments as mentioned above using add_argument() from ArguementParser method
+
+    parser.add_argument("--dir",  type=str, default='pet_images',help="default value is: pet_images ",)
+    parser.add_argument("--arch", help="CNN Model Architecture default is: vgg", type=str, default='vgg')
+    parser.add_argument("--dogfile", help="Text File of Dog Names with default value is: dognames.txt", type=str, default='dognames.txt')
+
+    # Replace None with parser.parse_args() parsed argument collection that 
+    # you created with this function 
+    args = parser.parse_args()
+    #print(args)
+    return args
+
+#if __name__ == "__main__":
+#    get_input_args()
