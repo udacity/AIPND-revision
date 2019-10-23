@@ -85,6 +85,7 @@ def calculates_results_stats(results_dic):
         # Labels Match Exactly
         if results_dic[key][2] == 1:
             results_stats_dic['n_match'] += 1
+            
 
         # TODO: 5a. REPLACE pass with CODE that counts how many pet images of
         #           dogs had their breed correctly classified. This happens 
@@ -97,7 +98,8 @@ def calculates_results_stats(results_dic):
         #           representing the number of correctly classified dog breeds.
         #           
         # Pet Image Label is a Dog AND Labels match- counts Correct Breed
-        pass
+        if results_stats_dic[key][2] == 0:
+            
         
         # Pet Image Label is a Dog - counts number of dog images
         if results_dic[key][3] == 1:
@@ -176,4 +178,4 @@ def calculates_results_stats(results_dic):
         
     # TODO 5f. REPLACE None with the results_stats_dic dictionary that you 
     # created with this function 
-    return None
+    return results_stats_dic
