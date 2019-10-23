@@ -60,7 +60,7 @@ def main():
     #             get_pet_labels(in_arg.dir)
     # This function creates the results dictionary that contains the results, 
     # this dictionary is returned from the function call as the variable results
-    results = get_pet_labels(None)
+    results = get_pet_labels()
 
     # Function that checks Pet Images in the results Dictionary using results    
     check_creating_pet_image_labels(results)
@@ -74,8 +74,8 @@ def main():
     #             classify_images(in_arg.dir, results, in_arg.arch)
     # Creates Classifier Labels with classifier function, Compares Labels, 
     # and adds these results to the results dictionary - results
-    classify_images(None, results, None)
-
+    classify_images('./pet_images', results, 'vgg')
+    #print('hellllllllo')
     # Function that checks Results Dictionary using results    
     check_classifying_images(results)    
 

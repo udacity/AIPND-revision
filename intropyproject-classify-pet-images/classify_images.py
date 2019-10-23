@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # */AIPND-revision/intropyproject-classify-pet-images/classify_images.py
 #                                                                             
-# PROGRAMMER: 
-# DATE CREATED:                                 
+# PROGRAMMER: s. jin
+# DATE CREATED:    2019/10/22                             
 # REVISED DATE: 
 # PURPOSE: Create a function classify_images that uses the classifier function 
 #          to create the classifier labels and then compares the classifier 
@@ -29,7 +29,7 @@ from classifier import classifier
 #       results_dic dictionary that is passed into the function is a mutable 
 #       data type so no return is needed.
 # 
-def classify_images(images_dir, results_dic, model):
+def classify_images(images_dir , results_dic, model='vgg'):
     """
     Creates classifier labels with classifier function, compares pet labels to 
     the classifier labels, and adds the classifier label and the comparison of 
@@ -68,6 +68,7 @@ def classify_images(images_dir, results_dic, model):
     # Process all files in the results_dic - use images_dir to give fullpath
     # that indicates the folder and the filename (key) to be used in the 
     # classifier function
+    #print(results_dic)
     for key in results_dic:
        
        # TODO: 3a. Set the string variable model_label to be the string that's 
@@ -77,8 +78,14 @@ def classify_images(images_dir, results_dic, model):
        #  Runs classifier function to classify the images classifier function 
        # inputs: path + filename  and  model, returns model_label 
        # as classifier label
-       model_label = ""
-
+       #print(results_dic[key][0])
+       imagename = images_dir+'/'+key
+       #print(imagename)
+       #model_label=""
+       model_label = classifier(imagename, model) #results_dic[key]
+       #print()
+       #print (model_label)
+       #print(results_dic[key])
        # TODO: 3b. BELOW REPLACE pass with CODE to process the model_label to 
        #           convert all characters within model_label to lowercase 
        #           letters and then remove whitespace characters from the ends
@@ -87,11 +94,12 @@ def classify_images(images_dir, results_dic, model):
        #
        # Processes the results so they can be compared with pet image labels
        # set labels to lowercase (lower) and stripping off whitespace(strip)
-       pass
+       #pass
               
        # defines truth as pet image label 
        truth = results_dic[key][0]
-
+       #print(truth)
+       #print()
        # TODO: 3c. REPLACE pass BELOW with CODE that uses the extend list function
        #           to add the classifier label (model_label) and the value of
        #           1 (where the value of 1 indicates a match between pet image 
@@ -102,7 +110,8 @@ def classify_images(images_dir, results_dic, model):
        # as an exact match to on of the terms in the list - then they are added to 
        # results_dic as an exact match(1) using extend list function
        if truth in model_label:
-           pass
+           results_dic[key].extend([model_label,'1'])
+
 
        # TODO: 3d. REPLACE pass BELOW with CODE that uses the extend list function
        #           to add the classifier label (model_label) and the value of
@@ -113,4 +122,13 @@ def classify_images(images_dir, results_dic, model):
        # if not found then added to results dictionary as NOT a match(0) using
        # the extend function 
        else:
-           pass 
+           results_dic[key].extend([model_label,'0'])
+    
+    #print (results_dic)
+
+# Call to main function to run the program
+#if __name__ == "__main__":
+#    images_dir='./pet_images'
+#    results_dic=dict()
+#    model='vgg'
+#    classify_images(images_dir, results_dic, model)

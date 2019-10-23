@@ -23,7 +23,7 @@ import os
 #       in the return statement with results_dic dictionary that you create 
 #       with this function
 # 
-def get_pet_labels(image_dir='./pet_images'):
+def get_pet_labels(image_dir='pet_images'):
     """
     Creates a dictionary of pet labels (results_dic) based upon the filenames 
     of the image files. These pet image labels are used to check the accuracy 
@@ -50,7 +50,7 @@ def get_pet_labels(image_dir='./pet_images'):
  
     # Creates empty dictionary for the results (pet labels, etc.)
     results_dic = dict()
-   
+    #print('hello')
     # Processes through each file in the directory, extracting only the words
     # of the file that contain the pet image label
     for idx in range(0, len(in_files), 1):
@@ -60,11 +60,7 @@ def get_pet_labels(image_dir='./pet_images'):
        if in_files[idx][0] != ".":
            
            # Creates temporary label variable to hold pet label name extracted 
-           pet_label = in_files[idx].lower() #lower case
-           pet_label = ''.join([i for i in pet_label if not i.isdigit()])# remove numbers in string
-           pet_label = os.path.splitext(pet_label)[0] # remove extension .jpg
-           pet_label = pet_label.replace("_"," ") # replace '_' to ' '
-           pet_label = pet_label[:-1] # remove last ' '
+           
            
            # TODO: 2a. BELOW REPLACE pass with CODE that will process each 
            #          filename in the in_files list to extract the dog breed 
@@ -73,6 +69,11 @@ def get_pet_labels(image_dir='./pet_images'):
            #          extracted dog breed name in the variable pet_label 
            #          that's created as an empty string ABOVE
            #pass
+           pet_label = in_files[idx].lower() #lower case
+           pet_label = ''.join([i for i in pet_label if not i.isdigit()])# remove numbers in string
+           pet_label = os.path.splitext(pet_label)[0] # remove extension .jpg
+           pet_label = pet_label.replace("_"," ") # replace '_' to ' '
+           pet_label = pet_label[:-1] # remove last ' '
 
            # If filename doesn't already exist in dictionary add it and it's
            # pet label - otherwise print an error message because indicates 
@@ -84,10 +85,11 @@ def get_pet_labels(image_dir='./pet_images'):
                print("** Warning: Duplicate files exist in directory:", 
                      in_files[idx])
 
-    print(results_dic)
+    #print(results_dic)
     # TODO 2b. Replace None with the results_dic dictionary that you created
     # with this function
     return results_dic
 
-if __name__ == "__main__":
-    get_pet_labels()
+#if __name__ == "__main__":
+#    result = get_pet_labels()
+#    print(result)
