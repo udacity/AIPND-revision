@@ -4,7 +4,7 @@
 #                                                                             
 # PROGRAMMER: s. jin
 # DATE CREATED:    2019/10/22                             
-# REVISED DATE: 
+# REVISED DATE: 2019/10/24
 # PURPOSE: Create a function classify_images that uses the classifier function 
 #          to create the classifier labels and then compares the classifier 
 #          labels to the pet image labels. This function inputs:
@@ -83,6 +83,8 @@ def classify_images(images_dir , results_dic, model='vgg'):
        #print(imagename)
        #model_label=""
        model_label = classifier(imagename, model) #results_dic[key]
+       model_label = model_label.lower()
+       model_label = model_label.strip()
        #print()
        #print (model_label)
        #print(results_dic[key])

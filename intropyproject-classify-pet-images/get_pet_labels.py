@@ -4,7 +4,7 @@
 #                                                                             
 # PROGRAMMER:  S. Jin
 # DATE CREATED:      2019/10/16                            
-# REVISED DATE: 
+# REVISED DATE:     2019/10/24
 # PURPOSE: Create the function get_pet_labels that creates the pet labels from 
 #          the image's filename. This function inputs: 
 #           - The Image Folder as image_dir within get_pet_labels function and 
@@ -73,7 +73,7 @@ def get_pet_labels(image_dir='pet_images'):
            pet_label = ''.join([i for i in pet_label if not i.isdigit()])# remove numbers in string
            pet_label = os.path.splitext(pet_label)[0] # remove extension .jpg
            pet_label = pet_label.replace("_"," ") # replace '_' to ' '
-           pet_label = pet_label[:-1] # remove last ' '
+           pet_label = pet_label.strip() # remove last ' '
 
            # If filename doesn't already exist in dictionary add it and it's
            # pet label - otherwise print an error message because indicates 

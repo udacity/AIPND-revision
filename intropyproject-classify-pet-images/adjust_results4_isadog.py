@@ -100,7 +100,7 @@ def adjust_results4_isadog(results_dic, dogfile):
             # if this line isn't empty (EOF)
             line = infile.readline()
 
-    print(dognames_dic)
+    #print(dognames_dic)
 
     # Add to whether pet labels & classifier labels are dogs by appending
     # two items to end of value(List) in results_dic. 
