@@ -18,16 +18,16 @@ These notes pertain to Frequently Asked Questions (FAQ) for the **_2. Intro to P
 &nbsp;     
   
 ## Issues with the Project Workspace
-While it is recommended that you work on the project within the **_Project Workspace_**, a few students _may_ experienced issues trying to work within the _Project Workspace_.  Some students found these issues resolved when they switched their internet browsers.  Specifically, some students found that **_Chrome_** worked best; while others found that **_Firefox_** worked better for them.  If you are running into the problem where the _files_ in the workspace don't load and/or running code within the workspace runs extremely slowly; please try the following:
+While it is recommended that you work on the project within the **_Project Workspace_**, a few students _may_ have experienced issues trying to work within the _Project Workspace_.  Some students found these issues resolved when they switched their internet browsers.  Specifically, some students found that **_Chrome_** worked best; while others found that **_Firefox_** worked better for them.  If you are running into the problem where the _files_ in the workspace don't load and/or running code within the workspace runs extremely slowly; please try the following:
 * Quit and exit out of the **_web browser_** you are using, then open it back up and restart it.
 * Switch to a different **_web browser_**. 
 
-If you run into issues with the **_Project Workspace_** and the above recommendations didn't work; alternativIy, you are welcome to complete the project on a local computer using the instructions in the next [FAQ](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#running-the-project-on-a-local-computer). 
+If you run into issues with the **_Project Workspace_** and the above recommendations didn't work; alternatively, you are welcome to complete the project on a local computer using the instructions in the next [FAQ](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md#running-the-project-on-a-local-computer). 
 &nbsp;      
 &nbsp;     
      
 ## Running the Project on a Local Computer
-While it is recommended that you work on the project within the **_Project Workspace_**, to run the project on a local computer, you will have needed to have python 3.6 intalled on your computer. 
+While it is recommended that you work on the project within the **_Project Workspace_**, to run the project on a local computer, you will have needed to have Python 3.6 intalled on your computer. 
 ### Installing Anaconda 
 The easiest way to install python and the appropriate python modules is to install [Anaconda](https://www.anaconda.com/download). You will also have found the directions to install Anaconda in **_2. Intro to Python_**, **_Lesson 5. Scripting_**, **_Section 3. Install Python Using Anaconda_**. 
 ### Installing PyTorch and torchvision
@@ -102,14 +102,14 @@ If you cut and paste code directly from the classroom, it is very likely you wil
 &nbsp;   
      
 ## Indention of Python Code
-Indention is used within Python to distinquish between blocks of code; whereas, with other programming languages, like Java and  C++,  they may have used curly brackets. The [PEP8 Style guide](https://www.python.org/dev/peps/pep-0008/) provides the standard for python code and is what has been used for the programs within the Github respository and the Project workspace. The [PEP8 standard for indention](https://www.python.org/dev/peps/pep-0008/#indentation) is to use 4 spaces for each indention level. Not using 4 spaces for indention when editing **_check_images.py_**, will likely result in syntax errors. 
+Indention is used within Python to distinquish between blocks of code; whereas, with other programming languages, like Java and  C++,  they may have used curly brackets. The [PEP8 Style guide](https://www.python.org/dev/peps/pep-0008/) provides the standard for Python code and is what has been used for the programs within the Github respository and the Project workspace. The [PEP8 standard for indention](https://www.python.org/dev/peps/pep-0008/#indentation) is to use 4 spaces for each indention level. Not using 4 spaces for indention when editing **_check_images.py_**, will likely result in syntax errors. 
 
-Be aware that using the _tab_ key within most text editors might not guarentee the proper 4 space indention.  Additionally, not all text editors (including the **_Project Workspace_**) provide the proper 4 space indention as is used in the python programs within the repository for this project.
+Be aware that using the _tab_ key within most text editors might not guarantee the proper 4 space indention.  Additionally, not all text editors (including the **_Project Workspace_**) provide the proper 4 space indention as is used in the Python programs within the repository for this project.
 &nbsp;     
 &nbsp;    
     
 ## Replacing None and Pass Statements
-When editing the functions provided in **_check_images.py_** you will need to replace [_None_](https://docs.python.org/3/library/constants.html#None) or the [_pass_](https://docs.python.org/3/tutorial/controlflow.html#pass-statements) statement with your code for that function. The pass statement does nothing, it's used so that the program will still run eventhough the functions have not been fully defined. Similarly the value of _None_ represents the absence of a value, it's used so that the program will still run eventhough the functions have not been fully defined.
+When editing the functions provided in **_check_images.py_** you will need to replace [_None_](https://docs.python.org/3/library/constants.html#None) or the [_pass_](https://docs.python.org/3/tutorial/controlflow.html#pass-statements) statement with your code for that function. The pass statement does nothing, it's used so that the program will still run even though the functions have not been fully defined. Similarly the value of _None_ represents the absence of a value, it's used so that the program will still run even though the functions have not been fully defined.
 &nbsp;    
 &nbsp;     
     
