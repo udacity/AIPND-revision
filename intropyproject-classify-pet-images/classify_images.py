@@ -11,7 +11,7 @@
 #            -The Image Folder as image_dir within classify_images and function 
 #             and as in_arg.dir for function call within main. 
 #            -The results dictionary as results_dic within classify_images 
-#             function and results for the functin call within main.
+#             function and results for the function call within main.
 #            -The CNN model architecture as model within classify_images function
 #             and in_arg.arch for the function call within main. 
 #           This function uses the extend function to add items to the list 
@@ -99,12 +99,9 @@ def classify_images(images_dir, results_dic, model):
         # If the pet image label is found within the classifier label list of terms
         # as an exact match to on of the terms in the list - then they are added to
         # results_dic as an exact match(1) using extend list function
-        # todo: not sure what the deal with this is...
-        results_dic[key] = [truth, model_label]
+        results_dic[key].append(model_label)
 
         if truth in model_label:
-            # todo: not sure what the deal with this is...
-            # results_dic[key] = [truth, model_label, 1, 1, 0]
             results_dic[key].append(1)
 
         # TODO: 3d. REPLACE pass BELOW with CODE that uses the extend list function
@@ -116,6 +113,4 @@ def classify_images(images_dir, results_dic, model):
         # if not found then added to results dictionary as NOT a match(0) using
         # the extend function
         else:
-            # todo: not sure what the deal with this is...
-            # results_dic[key] = [truth, model_label, 0, 0, 0]
             results_dic[key].append(0)

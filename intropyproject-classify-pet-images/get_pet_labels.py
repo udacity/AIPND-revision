@@ -61,5 +61,4 @@ def get_pet_labels(image_dir):
         else:
             print("** Warning: Duplicate files exist in directory:", files[id])
 
-    print(results_dic)
     return results_dic
