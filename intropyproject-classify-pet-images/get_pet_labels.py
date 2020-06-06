@@ -44,12 +44,11 @@ def get_pet_labels(image_dir):
     # function
 
     files = listdir(image_dir)
-    results_dic = dict()
+    results_dic = {}
 
     for id in range(0, len(files), 1):
-        pet_label = ''
         if files[id] not in results_dic:
-            results_dic[files[id]] = [pet_label]
+            results_dic[files[id]] = ['']
         else:
             print("** Warning: Duplicate files exist in directory:", files[id])
 
