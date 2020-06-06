@@ -46,10 +46,20 @@ def get_pet_labels(image_dir):
     files = listdir(image_dir)
     results_dic = {}
 
+    def create_label(filename):
+        low_pet_name = filename.lower()
+        word_list = low_pet_name.split('_')
+        pet_name = ''
+        for word in word_list:
+            if word.isalpha():
+                pet_name += word + ' '
+        return pet_name.strip()
+
     for id in range(0, len(files), 1):
         if files[id] not in results_dic:
-            results_dic[files[id]] = ['']
+            results_dic[files[id]] = [create_label(files[id])]
         else:
             print("** Warning: Duplicate files exist in directory:", files[id])
 
+    print(results_dic)
     return results_dic
