@@ -1,0 +1,63 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 3 key-value pairs.
+Below are 3 of them:
+ 1 key:                building_01.jpg  label:                   building
+ 2 key:        golden_retriever_01.jpg  label:           golden retriever
+ 3 key:                 penguin_01.jpg  label:                    penguin
+
+     MATCH:
+
+       golden_retriever_01.jpg: 
+Real:           golden retriever   Classifier:               golden retriever
+
+                penguin_01.jpg: 
+Real:                    penguin   Classifier: king penguin, aptenodytes patagonica
+
+ NOT A MATCH:
+
+               building_01.jpg: 
+Real:                   building   Classifier: drilling platform, offshore rig
+
+# Total Images 3 # Matches: 2 # NOT Matches: 1
+
+     MATCH:
+
+       golden_retriever_01.jpg: 
+Real:           golden retriever   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                penguin_01.jpg: 
+Real:                    penguin   Classifier: king penguin, aptenodytes patagonica  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+               building_01.jpg: 
+Real:                   building   Classifier: drilling platform, offshore rig  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 3 # Matches: 2 # NOT Matches: 1
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  3  N Dog Images:  1  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  3  N Dog Images:  1  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   3
+N Dog Images        :   1
+N Not-Dog Images    :   2
+Percentage Match  66.67%
+Percentage Correct Dogs  100.00%
+Percentage Correct Breed  100.00%
+Percentage Not Dogs  100.00%
+
+** Total Elapsed Runtime: 0:0:0
