@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # */AIPND-revision/intropyproject-classify-pet-images/adjust_results4_isadog.py
 #                                                                             
-# PROGRAMMER: 
-# DATE CREATED:                                 
+# PROGRAMMER: Lorenzo Hernandez
+# DATE CREATED: 04/03/2021                 
 # REVISED DATE: 
 # PURPOSE: Create a function adjust_results4_isadog that adjusts the results 
 #          dictionary to indicate whether or not the pet image label is of-a-dog, 
@@ -66,5 +66,27 @@ def adjust_results4_isadog(results_dic, dogfile):
                maltese) (string - indicates text file's filename)
     Returns:
            None - results_dic is mutable data type so no return needed.
-    """           
-    None
+    """     
+    # opens and reads dogfile.txt to get list of dog names
+    with open(dogfile) as dogfile:
+        
+        dogname_dic = dict()
+        lines = dogfile.readlines()
+        
+        #gets line in dogfile and creates a dictionary of stripped dog names 
+        for line in lines:
+            line = line.rstrip()
+            if line not in dogname_dic.keys():
+                dogname_dic[line] = 1
+                
+        # will go through labels in results_dic and compares it to dogname_dic. This will extend results_dic
+        # with a 1 if key matches dogname and 0 if it doesn't match
+        for key in results_dic:
+            if results_dic[key][0] in dogname_dic and results_dic[key][1] in dogname_dic:
+                results_dic[key].extend([1, 1])
+            elif results_dic[key][0] in dogname_dic and results_dic[key][1] not in dogname_dic:
+                results_dic[key].extend([1, 0])
+            elif results_dic[key][0] not in dogname_dic and results_dic[key][1] in dogname_dic:
+                results_dic[key].extend([0, 1])
+            elif results_dic[key][0] not in dogname_dic and results_dic[key][1] not in dogname_dic:
+                results_dic[key].extend([0, 0])                              

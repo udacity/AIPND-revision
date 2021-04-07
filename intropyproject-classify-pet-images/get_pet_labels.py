@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # */AIPND-revision/intropyproject-classify-pet-images/get_pet_labels.py
 #                                                                             
-# PROGRAMMER: 
-# DATE CREATED:                                  
+# PROGRAMMER: Lorenzo Hernandez
+# DATE CREATED: 03/27/2021                  
 # REVISED DATE: 
 # PURPOSE: Create the function get_pet_labels that creates the pet labels from 
 #          the image's filename. This function inputs: 
@@ -23,7 +23,7 @@ from os import listdir
 #       in the return statement with results_dic dictionary that you create 
 #       with this function
 # 
-def get_pet_labels(image_dir):
+def get_pet_labels(pet_images):
     """
     Creates a dictionary of pet labels (results_dic) based upon the filenames 
     of the image files. These pet image labels are used to check the accuracy 
@@ -40,6 +40,32 @@ def get_pet_labels(image_dir):
       List. The list contains for following item:
          index 0 = pet image label (string)
     """
+    img_pth = listdir("pet_images/")
+    results_dic = dict()
+    
+    # iterating through the img directory
+    for indx in range(0, len(img_pth), 1):
+        pet_label = ""
+        
+        # makes pet_labels lowercase and splits the words
+        pet_labels = img_pth[indx].lower().split("_")  
+        
+        '''
+        for each label within pet_labels, if label starts with anything other than a letter it gets removed
+        and word pet_label gets updated with the label
+        '''
+        
+        for label in pet_labels:
+            if label.isalpha():
+                pet_label += label + " "
+                
+        # removes any leading and ending spaces        
+        pet_label = pet_label.strip()
+        
+        # if item in directory doesn't exist in results_dic, item gets added as the key and pet_label is added as the value
+        if img_pth[indx] not in results_dic:
+            results_dic[img_pth[indx]] = [pet_label]
+            
     # Replace None with the results_dic dictionary that you created with this
     # function
-    return None
+    return results_dic

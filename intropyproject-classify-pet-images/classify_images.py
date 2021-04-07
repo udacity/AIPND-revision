@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # */AIPND-revision/intropyproject-classify-pet-images/classify_images.py
 #                                                                             
-# PROGRAMMER: 
-# DATE CREATED:                                 
+# PROGRAMMER: Lorenzo Hernandez
+# DATE CREATED: 03/30/2021                 
 # REVISED DATE: 
 # PURPOSE: Create a function classify_images that uses the classifier function 
 #          to create the classifier labels and then compares the classifier 
@@ -12,7 +12,7 @@
 #             and as in_arg.dir for function call within main. 
 #            -The results dictionary as results_dic within classify_images 
 #             function and results for the functin call within main.
-#            -The CNN model architecture as model within classify_images function
+#            -The CNN model architecture as model wihtin classify_images function
 #             and in_arg.arch for the function call within main. 
 #           This function uses the extend function to add items to the list 
 #           that's the 'value' of the results dictionary. You will be adding the
@@ -32,7 +32,7 @@ from classifier import classifier
 def classify_images(images_dir, results_dic, model):
     """
     Creates classifier labels with classifier function, compares pet labels to 
-    the classifier labels, and adds the classifier label and the comparison of 
+    the classifier labels, and adds the classifier label and the comparison of 0
     the labels to the results dictionary using the extend function. Be sure to
     format the classifier labels so that they will match your pet image labels.
     The format will include putting the classifier labels in all lower case 
@@ -65,4 +65,25 @@ def classify_images(images_dir, results_dic, model):
      Returns:
            None - results_dic is mutable data type so no return needed.         
     """
-    None 
+    
+    for key in results_dic:
+        # returns the fill path for each filename in folder
+        filename = images_dir + key
+        
+        #uses the classifier function to return labels to compare to values in results_dic)
+        model_label = classifier(filename, model)
+        
+        #makes model_lable lower case and strips empty spaces
+        classifier_label = model_label.lower().strip()
+        
+        #Gets the value to compare with model_label
+        truth = results_dic[key][0]
+        
+        if truth in classifier_label:
+            # Adds the model_label and a 1 if model_label and results_dic value matches to results_dic
+            results_dic[key].extend([classifier_label, 1])
+            
+        else:
+            # Adds the model_label and a 0 if model_label and results_dic value do not match to results_dic
+            results_dic[key].extend([classifier_label, 0])
+         
