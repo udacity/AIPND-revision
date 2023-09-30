@@ -4,10 +4,14 @@ import torchvision.transforms as transforms
 from torch.autograd import Variable
 import torchvision.models as models
 from torch import __version__
+# Load pre-trained models using the 'weights' parameter to fix the The 'pretrained' parameter is deprecated warnings
+from torchvision.models import alexnet, AlexNet_Weights
+from torchvision.models import resnet18, ResNet18_Weights
+from torchvision.models import vgg16, VGG16_Weights
 
-resnet18 = models.resnet18(pretrained=True)
-alexnet = models.alexnet(pretrained=True)
-vgg16 = models.vgg16(pretrained=True)
+resnet18 = models.resnet18(weights=ResNet18_Weights.DEFAULT)
+alexnet = models.alexnet(weights=AlexNet_Weights.DEFAULT)
+vgg16 = models.vgg16(weights=VGG16_Weights.DEFAULT)
 
 models = {'resnet': resnet18, 'alexnet': alexnet, 'vgg': vgg16}
 
